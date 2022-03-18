@@ -17,3 +17,20 @@
 Модель: {}
 Год выпуска: {}
 """
+
+
+class Phone:
+
+    def __init__(self, brand='Apple', model='Iphone SE 2020', issue_year=2020):
+        self.caller = None
+        self.brand = brand
+        self.model = model
+        self.issue_year = issue_year
+
+    def receive_call(self, name='Alex'):
+        self.caller = name
+        return f"Звонит {self.caller}"
+
+    def get_info(self):
+        get_info = (self.brand, self.model, self.issue_year)
+        return get_info
