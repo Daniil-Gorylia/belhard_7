@@ -32,7 +32,7 @@ class Counter:
 
     def decrease(self, num=1):
         decrease_value = self.value
-        decrease_value += num
+        decrease_value -= num
         return decrease_value
 
     def __iter__(self):
