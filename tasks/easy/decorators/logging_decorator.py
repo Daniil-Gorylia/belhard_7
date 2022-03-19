@@ -12,7 +12,8 @@
 def log_decorator(func):
     def start_func(*args, **kwargs):
         print(f'Выполняем {func.__name__} с args: {args} и kwargs: {kwargs}')
-        print(func(*args, **kwargs))
+        if func(*args, **kwargs) is not None:
+            print(func(*args, **kwargs))
         print(f'Выполнено {func.__name__}')
     return start_func
 
