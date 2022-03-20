@@ -39,10 +39,12 @@ def add_class(SCHOOL_DATA, name):
         SCHOOL_DATA.update({name: 0})
         return SCHOOL_DATA
 
+
 def remove_class(SCHOOL_DATA, name):
     if name in SCHOOL_DATA:
         SCHOOL_DATA.pop(name)
         return SCHOOL_DATA
+
 
 def calc_students(SCHOOL_DATA):
     a = sum(SCHOOL_DATA.values())

@@ -9,3 +9,9 @@ next(even_gen) -> 2
 next(even_gen) -> 4
 next(even_gen) -> 6
 """
+
+
+def get_even_number():
+    a = range(2, 100, 2)
+    for n in a:
+        yield n
